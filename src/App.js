@@ -4,7 +4,8 @@ import { FaHome } from "react-icons/fa"; //home 아이콘
 
 // import Hello from './01/Hello' ;
 // import MyDiv1 from './02/MyDiv1';
-import CardMain from './03/CardMain';
+// import CardMain from './03/CardMain';
+import BoxOffice from './04/BoxOffice';
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
 
         <div className="w-full grow
                         flex flex-col justify-center items-center">
-          {/* <Helllo />  */}
+          {/* <Hello />  */}
           {/* <MyDiv1 /> */}
-          <CardMain />
+          {/* <CardMain /> */}
+          <BoxOffice />
         </div>
 
         <footer className="w-full h-16 

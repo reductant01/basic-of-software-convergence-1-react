@@ -19,10 +19,10 @@ function MyCom() {
   useEffect(()=>{
     const timer = setInterval(()=>{
       setTm(new Date())
-    }, 1000); // ??
+    }, 1000); // 1000ms마다 실행
 
     return(()=>{
-      clearInterval(timer); // ??
+      clearInterval(timer); // 컴포넌트가 없어질때 timer 변수 초기화
     });
   }, []);
 

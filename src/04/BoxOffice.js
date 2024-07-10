@@ -27,7 +27,8 @@ export default function BoxOffice() {
     console.log(tdata)
     let tm = tdata.map(item => 
     <tr className="bg-white border-b hover:bg-gray-50 font-bold"
-        key={item.movieCd}>
+        key={item.movieCd}> 
+        {/* 왜 key를 입력하지 않으면 오류발생?? */}
       <th scope="row" className="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
         {item.rank}
       </th>

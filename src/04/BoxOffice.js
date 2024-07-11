@@ -25,7 +25,7 @@ export default function BoxOffice() {
 
   // 영화가 선택되었을 떄
   const handleSelMv = ((mv) => {
-    // console.log(mv)
+    console.log(mv)
     let tm = <>
       <span className="mr-2">{mv.movieNm}</span>
       <span className="mr-2 text-white">개봉일 : {mv.openDt}</span>

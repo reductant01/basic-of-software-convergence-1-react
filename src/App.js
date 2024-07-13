@@ -9,6 +9,7 @@ import Hello from './01/Hello';
 import MyDiv1 from './02/MyDiv1';
 import CardMain from './03/CardMain';
 import BoxOffice from './04/BoxOffice';
+import GalMain from './05/GalMain';
 
 function App() {
   return (
@@ -26,22 +27,27 @@ function App() {
               <li className='px-5 rounded-sm
                            hover:text-blue-700 hover:cursor-pointer
                            '>
-                <Link to="/">clock</Link>
+                <Link to="/">Clock</Link>
               </li>
               <li className='px-5 rounded-sm
                            hover:text-blue-700 hover:cursor-pointer
                            '>
-                <Link to='/probs'>probs</Link>
+                <Link to='/probs'>Probs</Link>
               </li>
               <li className='px-5 rounded-sm
                            hover:text-blue-700 hover:cursor-pointer
                            '>
-                <Link to='/card'>card</Link>
+                <Link to='/card'>Card</Link>
               </li>
               <li className='px-5 rounded-sm
                            hover:text-blue-700 hover:cursor-pointer
                            '>
                 <Link to='/box'>BoxOffice</Link>
+              </li>  
+              <li className='px-5 rounded-sm
+                           hover:text-blue-700 hover:cursor-pointer
+                           '>
+                <Link to='/gal'>GalMain</Link>
               </li>
             </ul>
             <div>
@@ -49,13 +55,14 @@ function App() {
             </div>
           </header>
 
-          <div className="w-full grow
+          <div className="w-full grow overflow-y-auto
                         flex flex-col justify-center items-center">
             <Routes>
               <Route path='/' element={<Hello />} />
               <Route path='/probs' element={<MyDiv1 />} />
               <Route path='/card' element={<CardMain />} />
               <Route path='/box' element={<BoxOffice />} />
+              <Route path='/gal' element={<GalMain />} />
             </Routes>
           </div>
 
